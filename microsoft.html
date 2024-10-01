@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <link rel="stylesheet" href="microsoft.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <!-- mobile menu-->
+        <div class="menu-left">
+            <div onclick="menutoggle(this)"><i class="bi bi-list" id="hamburger"></i></div>
+            <div><i class="bi bi-search"></i></div>
+        </div>
+        <div class="menu-center"><div><img src="./images/Microsoft-Logo.png" alt="" width="150px" height="60px"></div></div>
+        <div class="menu-right">
+            <div><i class="bi bi-cart3"></i></div>
+            <div><i class="bi bi-person-circle"></i></div>
+        </div>
+        <!-- laptop menu-->
+        <div class="logo"><img src="./images/Microsoft-Logo.png" alt="" srcset="">
+            <ul>
+                <li><a href="#">Microsoft 365</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Copilot</a></li>
+                <li><a href="#">Windows</a></li>
+                <li><a href="#">Surface</a></li>
+                <li><a href="#">Xbox</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li class="down-arrow" onclick="microsofttoggle(this)"><a href="#">All Microsoft</a><span><i class="bi bi-chevron-down"></i></span></li>
+                <li class="search"><i class="bi bi-search"></i></li>
+                <li class="a-to-card"><i class="bi bi-cart3"></i></li>
+                <li class="user"><i class="bi bi-person-circle"></i></li>
+            </ul>
+        </div>
+    </nav>
+<!-- hidden menu -->
+    <div class="nav-menu">
+        <ul class="outer-ul">
+            <li class="fst-list">
+                <ul class="inner-ul-view">
+                    <li><a href="#">Microsoft 365</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Copilot</a></li>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Surface</a></li>
+                    <li><a href="#">Xbox</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </li>
+            <li class="next-list"><button onclick="menulisttoggle(this,0)">Software <span><i class="bi bi-chevron-down"></i></span></button>
+                <ul class="inner-ul">
+                    <li><a href="#">Windows Apps</a></li>
+                    <li><a href="#">AI</a></li>
+                    <li><a href="#">OneDrive</a></li>
+                    <li><a href="#">Outlook</a></li>
+                    <li><a href="#">Skype</a></li>
+                    <li><a href="#">Onenote</a></li>
+                    <li><a href="#">Microsoft Teams</a></li>
+                </ul>
+            </li>
+
+            <li class="next-list">
+                <button onclick="menulisttoggle(this,1)">PCs & Devices <span><i class="bi bi-chevron-down"></i></span></button></button>
+                <ul class="inner-ul">
+                    <li><a href="#">Shop Xbox</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </li>
+            <li class="next-list">
+                <button onclick="menulisttoggle(this,2)">Entertainment <span><i class="bi bi-chevron-down"></i></span></button></button>
+                <ul class="inner-ul">
+                    <li><a href="#">Xbox Game Pass Ultimate</a></li>
+                    <li><a href="#">Xbox games</a></li>
+                    <li><a href="#">PC games</a></li>
+                    <li><a href="#">Windows digital games</a></li>
+                </ul>
+            </li>
+            <li class="next-list">
+                <button onclick="menulisttoggle(this,3)">Business <span><i class="bi bi-chevron-down"></i></span></button></button>
+                <ul class="inner-ul">
+                    <li><a href="#">Microsoft Cloud</a></li>
+                    <li><a href="#">Microsoft Security</a></li>
+                    <li><a href="#">Azure</a></li>
+                    <li><a href="#">Dynamics 365</a></li>
+                    <li><a href="#">Microsoft 365 for business</a></li>
+                    <li><a href="#">Microsoft Industry</a></li>
+                    <li><a href="#">Microsoft Power Platform</a></li>
+                    <li><a href="#">Windows 365</a></li>
+                </ul>
+            </li>
+            <li class="next-list">
+                <button onclick="menulisttoggle(this,4)">Developer & IT <span><i class="bi bi-chevron-down"></i></span></button></button>
+                <ul class="inner-ul">
+                    <li><a href="#">Developer center</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Microsoft Learn</a></li>
+                    <li><a href="#">Microsoft Tech Community</a></li>
+                    <li><a href="#">Azure Marketplace</a></li>
+                    <li><a href="#">AppSource</a></li>
+                    <li><a href="#">Visual Studio</a></li>
+                </ul>
+            </li>
+            <li class="next-list">
+                <button onclick="menulisttoggle(this,5)">Other <span><i class="bi bi-chevron-down"></i></span></button></button>
+                <ul class="inner-ul">
+                    <li><a href="#">Free downloads & security</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Licensing</a></li>
+                </ul>
+            </li>
+            <li class="next-list" id="view-map">
+                <a href="#">View Sitemap</a>
+            </li>
+        </ul>
+    </div>
+    <!-- all microsoft nav menu list -->
+     <div class="microsoft-menu">
+        <ul>
+            <li>
+                <li>
+                    <span>Software</span>
+                    <ul>
+                        <li><a href="#">Windows Apps</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">OneDrive</a></li>
+                        <li><a href="#">Outlook</a></li>
+                        <li><a href="#">Skype</a></li>
+                        <li><a href="#">OneNote</a></li>
+                        <li><a href="#">Microsoft Teams</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>PCs & Devices</span>
+                    <ul>
+                        <li><a href="#">Shop Xbox</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Entertainment</span>
+                    <ul>
+                        <li><a href="#">Xbox Game Pass Ultimate</a></li>
+                        <li><a href="#">Xbox games</a></li>
+                        <li><a href="#">PC games</a></li>
+                        <li><a href="#">Windows digital games</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Business</span>
+                    <ul>
+                        <li><a href="#">Microsoft Cloud</a></li>
+                        <li><a href="#">Microsoft Security</a></li>
+                        <li><a href="#">Azure</a></li>
+                        <li><a href="#">Dynamics 365</a></li>
+                        <li><a href="#">Microsoft 365 for business</a></li>
+                        <li><a href="#">Microsoft Industry</a></li>
+                        <li><a href="#">Microsoft Power Platform</a></li>
+                        <li><a href="#">Windows 365</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Developer & IT</span>
+                    <ul>
+                        <li><a href="#">Developer Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Microsoft Learn</a></li>
+                        <li><a href="#">Microsoft Tech Community</a></li>
+                        <li><a href="#">Azure Marketplace</a></li>
+                        <li><a href="#">AppSource</a></li>
+                        <li><a href="#">Visual Studio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Other</span>
+                    <ul>
+                        <li><a href="#">Free downloads & security</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Licensing</a></li>
+                    </ul>
+                </li>
+            </li>
+            <li>
+                <a href="#">VIEW SITEMAP <span><i class="bi bi-chevron-right"></i></span></a>
+            </li>
+        </ul>
+     </div>
+    <!-- Slider start -->
+    <section>
+        <div class="slider">
+            <div class="slider-list">
+            <div class="slide">
+                <img src="./images/slide1.jpg" alt="">
+                <div class="slide-content">
+                    <p class="new">New</p>
+                    <h2>Meet Surface Pro</h2>
+                    <div class="para">
+                        <p>This laptop's unrivalled flexibility and AI features like Live Captions and Cocreator, enable
+                            you to do more than you ever imagined.</p>
+                    </div>
+                    <div class="Lmore"><a href="#">Learn more</a></div>
+                </div>
+            </div>
+            <div class="slide" id="slide-2">
+                <img src="./images/Highlight-Surface-Laptop-AI-7Ed-Sapphire-MC001-3000x1682_VP4-1399x600.jpg" alt="">
+                <div class="slide-content">
+                    <p class="new">New</p>
+                    <h2>Meet Surface Pro</h2>
+                    <div class="para">
+                        <p>This laptop's unrivalled flexibility and AI features like Live Captions and Cocreator, enable
+                            you to do more than you ever imagined.</p>
+                    </div>
+                    <div class="Lmore"><a href="#">Learn more</a></div>
+                </div>
+
+            </div>
+        </div>
+            <div class="slider-icon">
+                <span id="play"><i class="bi bi-play-circle" id="playicon"></i></span>
+                <span class="slide-i-left" id="prev"><i class="bi bi-chevron-left" ></i></span>
+                <span><i class="bi bi-circle-fill dot"></i></span>
+                <span><i class="bi bi-circle dot"></i></span>
+                <span class="slide-i-right" id="next"><i class="bi bi-chevron-right"></i></span>
+            </div>
+        </div>
+    </section>
+    <!-- Slider end -->
+     <!-- microsoft icon list start-->
+    <section>
+        <div class="microsoft-list">
+            <div><img src="./images/Link-List-Icons-Microsoft-365.png" alt="">
+                <a href="#">Choose your Microsoft 365</a>
+            </div>
+            <div><img src="./images/Link-List-Icons-Xbox-Games-Consoles.png" alt="">
+                <a href="#">Shop Xbox</a>
+            </div>
+            <div><img src="./images/Link-List-Icons-Microsoft-365 (1).png" alt="">
+                <a href="#">Get Windows 11</a>
+            </div>
+            <div><img src="./images/Link-List-Icons-Surface-Devices.png" alt="">
+                <a href="#">Explore Surface devices</a>
+            </div>
+        </div>
+    </section>
+    <!-- microsoft icon list end-->
+     <!-- card section start -->
+    <section>
+        <div class="card-section">
+            <div class="card">
+                <div class="card-img"><img src="./images/Content-Card-Microsoft-365-Lifestyle-Sandstone-Icon-Toss.jpg"
+                        alt=""></div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Maximise the everyday with Microsoft 365</h2>
+                        <p>Get online protection, secure cloud storage and innovative apps designed to fit your needs –
+                            all in one plan.</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn">For one person</a>
+                        <a href="#" class="btn-1">For up to six peoples <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="./images/gldn-XSX-CP-Xbox-Series-X.jpg" alt=""></div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Xbox Series X</h2>
+                        <p>The fastest, most powerful Xbox ever.</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn">Shop Xbox Series X</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="./images/gldn-XSS-CP-Xbox-Series-S-Evergreen.jpg" alt=""></div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Xbox Series S</h2>
+                        <p>Next-gen performance in the smallest Xbox ever.</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn">Shop Xbox Series S</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="./images/gldn-CP-Windows11-GlobalLaunch.jpg" alt=""></div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Designed for life today – and tomorrow</h2>
+                        <p>The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring
+                            you closer to everything you love.</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn">See if your PC is ready</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- card section end -->
+     <!-- game pass section start -->
+    <section class="gampe-pass-sec">
+        <div class="game-pass">
+            <img src="./images/Highlight-Game-Pass-Update-September-2024_VP4-1260x600.jpg" alt="">
+            <div class="game-pass-content">
+                <h2>Game Pass</h2>
+                <p>Play new games on day one. Plus, enjoy hundreds of high-quality games with friends on console and PC.
+                </p>
+                <div class="Lmore"><a href="#" class="btn">Join now</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- game pass section end -->
+     <!-- for business start -->
+    <section>
+        <div class="for-business">
+            <h2 class="head">For business</h2>
+            <div class="card-section">
+                <div class="card">
+                    <div class="card-img"><img src="./images/gldn-Surf-CP-SurfaceFamilyForBusiness.jpg" alt=""></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h2>Surface for Business</h2>
+                            <p>No matter what you do, there’s a Surface to help you do it.</p>
+                        </div>
+                        <div class="card-footer"><a href="#" class="btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="./images/Content-Card-Microsoft-Teams-Commercial-Meeting.jpg"
+                            alt=""></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h2>Get Microsoft Teams for your business</h2>
+                            <p>
+                                Online meetings, chat, real-time collaboration, and shared cloud storage – all in one
+                                place.</p>
+                        </div>
+                        <div class="card-footer"><a href="#" class="btn" id="btn-2">Find the right plan for your
+                                business</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="./images/Content-Card-Windows-11-Business (1).jpg" alt=""></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h2>Windows 11 for business</h2>
+                            <p>
+                                Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</p>
+                        </div>
+                        <div class="card-footer"><a href="#" class="btn">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="./images/Content-Card-Copilot-Commercial.jpg" alt=""></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h2>Microsoft 365 Copilot</h2>
+                            <p>
+                                Save time and focus on the things that matter most with AI in Microsoft 365 for
+                                business.</p>
+                        </div>
+                        <div class="card-footer"><a href="#" class="btn">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- for business end -->
+     <!-- Social media start -->
+    <section>
+        <div class="follow">
+            <div class="spans">
+                <span>
+                    <p>Follow Microsoft</p>
+                </span><span><i class="bi bi-facebook"></i></span><span><i class="bi bi-twitter-x"></i></span><span><i
+                        class="bi bi-youtube"></i></span>
+            </div>
+        </div>
+    </section>
+    <!-- social media end -->
+     <!-- back to top -->
+    <button id="back-to-top" class="hide" onclick="scrollToTop()"><span><i class="bi bi-arrow-up-short"></i></span>Back to top</button>
+    <!-- back to top -->
+    <footer>
+        <div class="up">
+            <div class="up-1">
+                <div class="lists">
+                    <div class="links-head">
+                        <h4>What's new</h4>
+                    </div>
+                    <div class="links"><a href="#">Surface Pro</a>
+                        <a href="#">Surface Laptop</a>
+                        <a href="#">Microsoft Copilot</a>
+                        <a href="#">Microsoft 365</a>
+                        <a href="#">Explore Microsoft products</a>
+                        <a href="#">Windows 11 apps</a>
+                    </div>
+                </div>
+                <div class="lists">
+                    <div class="links-head">
+                        <h4>Microsoft Store</h4>
+                    </div>
+                    <div class="links"><a href="#">Account profile</a>
+                        <a href="#">Download Center</a>
+                        <a href="#">Microsoft Store Support</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Order tracking</a>
+                    </div>
+                </div>
+                <div class="lists">
+                    <div class="links-head">
+                        <h4>Education</h4>
+                    </div>
+                    <div class="links"><a href="#">Microsoft in education</a>
+                        <a href="#">Devices for education</a>
+                        <a href="#">Microsoft Teams for Education</a>
+                        <a href="#">Microsoft 365 Education</a>
+                        <a href="#">Office Education</a>
+                        <a href="#">Educator training and development</a>
+                        <a href="#">Deals for students and parents</a>
+                        <a href="#">Azure for students</a>
+                    </div>
+                </div>
+            </div>
+            <div class="up-2">
+                <div class="lists">
+                    <div class="links-head">
+                        <h4>Business</h4>
+                    </div>
+                    <div class="links"><a href="#">Microsoft Cloud</a>
+                        <a href="#">Microsoft Security</a>
+                        <a href="#">Azure</a>
+                        <a href="#">Dynamics 365</a>
+                        <a href="#">Microsoft 365</a>
+                        <a href="#">Microsoft Advertising</a>
+                        <a href="#">Microsoft 365 Copilot</a>
+                        <a href="#">Microsoft Teams</a>
+                    </div>
+                </div>
+                <div class="lists">
+                    <div class="links-head">
+                        <h4>Developer & IT</h4>
+                    </div>
+                    <div class="links"><a href="#">Developer Center</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Microsoft Learn</a>
+                        <a href="#">Microsoft Tech Community</a>
+                        <a href="#">Azure Marketplace</a>
+                        <a href="#">AppSource</a>
+                        <a href="#">Microsoft Power Platform</a>
+                        <a href="#">Visual Studio</a>
+                    </div>
+
+                </div>
+                <div class="lists">
+                    <div class="links-head">
+                        <h4>Company</h4>
+                    </div>
+                    <div class="links"><a href="#">Careers</a>
+                        <a href="#">About Microsoft</a>
+                        <a href="#">Company news</a>
+                        <a href="#">Privacy at Microsoft</a>
+                        <a href="#">Investors</a>
+                        <a href="#">Security</a>
+                        <a href="#">Sustainability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <div class="left">
+                <ul>
+                    <li class="global"><span><i class="bi bi-globe-central-south-asia"></i></span><a href="#">English
+                            (India)</a></li>
+                    <li class="toggle"><span><img src="./images/Frame 2.png" alt="" width="30px" height="15px"></span><a
+                            href="#">Your Privacy Choices</a></li>
+                    <li><a href="#">Consumer Health Privacy</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Contact Microsoft</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Trademarks</a></li>
+                    <li><a href="#">About our ads</a></li>
+                    <li><a href="#">© Microsoft 2024</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./microsoft.js"></script>
+
+</html>

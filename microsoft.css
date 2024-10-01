@@ -1,0 +1,971 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo img{
+    width: 150px;
+    height: 60px;
+    margin: -3px 0 0;
+    cursor: pointer;
+}
+/* menu */
+.nav-menu{
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: rgb(237, 237, 237);
+    z-index: 99;
+}
+.nav-menu ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+}
+.nav-menu ul li a{
+    width: 80%;
+    margin: 1px;
+    padding-top:14px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #262626;
+}
+.nav-menu ul li button{
+    width: 100%;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top:14px !important;
+    padding-left: 15px !important;
+    padding-bottom: 15px !important;
+    padding-right: 24px !important;
+    font-size: 15px;
+    padding: 0;
+    font-weight: 400;
+    height: max-content;
+    border: none;
+    color: #262626;
+    background-color: transparent;
+}
+.nav-menu ul li .change{
+    border: 1px dashed black;
+}
+.nav-menu ul li button span{
+    float: right;
+}
+.nav-menu .inner-ul-view li{
+    height: 51.5px;
+}
+.nav-menu .outer-ul, .inner-ul-view{
+    padding-left: 0px;
+    margin-bottom: 0;
+}
+.nav-menu .outer-ul .next-list{
+   height: max-content;
+}
+#view-map{
+    height: max-content;
+    border-bottom: 1px solid black;
+}
+.nav-menu .inner-ul{
+    padding-left: 30px;
+    padding-top: 1px;
+    display: none;
+}
+.nav-menu .inner-ul li{
+    height: 51.5px;
+}
+.nav-menu .inner-ul.active{
+    display: block;
+}
+
+nav{
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .menu-left, .menu-center, .menu-right{
+    display: none;
+}
+nav ul{
+    margin: 0;
+}
+nav .logo ul{
+    padding-left: 0;
+}
+nav .logo ul li{
+    display: inline;
+    text-align: center;
+    margin:1px 0 0 ;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 16px 8px 10px;
+}
+nav .logo ul li a{
+    text-decoration: none;
+    color: #262626;
+}
+nav .right-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .right-nav ul li{
+    color: #262626;
+    list-style: none;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+nav .right-nav .down-arrow{
+    margin: 1px 5px 0 0;
+    padding: 16px 20px 16px 15px;
+}
+nav .right-nav .down-arrow a{
+    text-decoration: none;
+    color: #262626;
+}
+nav .right-nav .down-arrow span{
+    margin-left: 5px;
+    padding-top: 5px;
+}
+nav .right-nav .search{
+    margin: 0 6px 1px;
+    padding: 10px 9px 8px;
+}
+nav .right-nav .a-to-card{
+    margin: 0 7px 0px;
+    padding: 2px 0px 0px 0px ;
+}
+nav .right-nav .user{
+    margin: 8px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+ nav ul li i{
+    font-size: 15px;
+ }
+nav ul li .bi-person-circle{
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid black;
+
+}
+/* microsoft-menu */
+.microsoft-menu{
+    display: none;
+}
+.microsoft-menu.active{
+    display: block;
+}
+/* slide */
+.slide{
+    position: relative;
+    min-width: 100%;
+  transition: opacity 0.5s ease;
+    
+}
+.slide img{
+    width: 100%;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider-list{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide .slide-content{
+    position: absolute;
+    top: 10%;
+    left: 70px;
+    background-color:white;
+    width: 400px;
+    height: 230px;
+    padding: 48px;
+    z-index: 10;
+}
+.new{
+    background-color: #ffb900;
+    width: max-content;
+    padding: 6px 12px;
+    font-weight: 500;
+    margin:0 0 8px;
+}
+.slide-content h2{
+    margin: 0 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.slide-content .para{
+    margin: 0 0 24px;
+}
+.slide-content .Lmore{
+    margin: 40px 0;
+}
+.slide-content a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #0067b8;
+    padding: 10px 12px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.slide-content a:hover{
+    background-color: #004a7f;
+}
+.slider-icon{
+    padding:20px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-icon span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.slider-icon .slide-i-left:hover{
+    transform: translateX(-10px);
+    transition: transform 0.3s linear;
+}
+.slider-icon .slide-i-right:hover{
+    transform: translateX(10px);
+    transition: transform 0.3s linear;
+}
+.slider-icon span .bi-circle-fill,.bi-circle{
+    font-size: 10px;
+}
+.microsoft-list{
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.microsoft-list div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.microsoft-list img{
+    width: 40px;
+    height: 40px;
+}
+.microsoft-list div a{
+    color: #0067b8;
+    font-weight: 600;
+}
+/* card section */
+.card-section{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 60px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.card-img img{
+    width: 100%;
+
+}
+.card-section .card{
+   width: 270px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+}
+.card-content{
+   height: 320px;
+   padding: 10px 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.card  h2{
+    font-weight: 600;
+}
+.card .btn{
+    text-align: left;
+    text-decoration: none;
+    width: fit-content;
+    color: white;
+    background-color: #0067b8;
+    padding: 10px 12px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.card-footer .btn-1{
+    text-decoration: none;
+    color:#0067b8;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+/* for business */
+.for-business{
+    display: flex;
+    flex-direction: column;
+}
+.for-business .head{
+    margin-bottom: 0;
+    margin-left: 70px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.game-pass{
+    width: 88.5%;
+    padding: 0 70px;
+    color: white;
+    position: relative;
+}
+.game-pass img{
+    width: 100%;
+    height: max-content;
+}
+.game-pass-content{
+    position: absolute;
+    width: 330px;
+    height: max-content;
+    top: 150px;
+    left: 150px;
+}
+.game-pass-content h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.game-pass-content p{
+    font-weight: 400;
+    margin: 20px 0;
+}
+.game-pass .btn{
+    margin: 20px 0;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    background-color: #0067b8;
+    padding: 10px 12px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #004a7f;
+}
+
+.follow{
+    width: 100%;
+}
+.follow .spans{
+    margin: 40px 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+.follow span .bi-facebook,.bi-twitter-x{
+    font-size: 20px;
+}
+.follow span .bi-youtube{
+    font-size: 30px;
+}
+#back-to-top{
+    position: sticky;
+    right: 20px;
+    bottom: 10px; 
+    margin:50px 88%;
+    width: max-content;
+    font-weight: 500;
+    border: 2px solid transparent;
+    background-color: #dcdcdc;
+    padding: 10px 12px;
+    border-radius: 2px;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+#back-to-top:hover{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+#back-to-top span{
+    text-align: center;
+}
+#back-to-top span i{
+    font-size: 20px;
+}
+.hide{
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+.show{
+    transition: opacity 1s;
+    opacity: 1;
+}
+/* footer */
+
+footer{
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer a{
+    text-decoration: none;
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: #616161;
+}
+footer h4{
+    font-weight: 500;
+    color:#616161 ;
+}
+footer .up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 40px;
+    gap: 40px;
+}
+footer .up .up-1,.up-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer .lists .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
+}
+footer .lists .links a:hover{
+    text-decoration: underline;
+}
+footer .down{
+    margin: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .down .left ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+footer .down .right ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+footer .down ul{
+    padding: 0;
+}
+footer .down .left ul li span i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+footer .down .left ul li span img{
+    margin-right: 10px;
+}
+footer .down ul li a:hover{
+    text-decoration: underline;
+}
+/* media query */
+@media only screen and (max-width: 1024px) {
+    nav .menu-left,.menu-center, .menu-right{
+        display: none;
+    }
+    nav{
+        padding: 0 20px;
+    }
+    .slide img{
+        display: none;
+    }
+.slide{
+    width: 100%;
+    height: 130vh;
+    background-image: url('./images/slide-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#slide-2{
+    background-image: url('./images/slide-2.jpg');
+}
+.slide .slide-content{
+    top: 80vh;
+    left: 2%;
+    right: 2%;
+    width: 86%;
+    margin: 0 auto;
+    padding: 48px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.slider-icon{
+    margin-top: 20px;
+}
+/* card */
+.card-img img{
+    width: 100%;
+
+}
+.card-section{
+    width: 96%;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.card-section .card{
+   width: 49%;
+   height: 480px;
+   display: block;
+   cursor: pointer;
+   margin-bottom: 48px;
+}
+.card-content{
+   height: 50%;
+   padding: 10px 30px;
+   gap: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.card-footer{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding-bottom:50px ;
+}
+.card  h2{
+    font-size: 21px;
+    margin: 5px 0px;
+}
+.card p{
+    margin: 5px 0px;
+    font-size: 16px;
+}
+.card .btn{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* game pass */
+.game-pass{
+    margin: 0 2%;
+    width: 82%;
+    height: 544px;
+    background-image: url("./images/Highlight-Game-Pass-Update-September-2024_VP2-859x540.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.game-pass img{
+    display: none;
+}
+.game-pass-content{
+    background-color: white;
+    color: #000;
+    top: 75vh;
+    left: 1%;
+    right: 1%;
+    width: 88%;
+    margin: 0 auto;
+    padding: 48px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.game-pass-content h2{
+    margin: 0;
+}
+/* for business */
+.for-business{
+    margin-top: 200px;
+}
+.for-business .head{
+    margin-left: 20px;
+}
+/* footer */
+footer .up{
+    flex-direction: column;
+}
+footer .lists{
+    width: 30%;
+}
+footer .down .left ul li{
+    display: block;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+footer .down .right ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+footer .down .right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer .down .left ul li span i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.follow .spans{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+#back-to-top{
+    margin:20px 85%;
+}
+}
+@media only screen and (max-width: 768px){
+    .nav-menu.active{
+        display: block;
+    }
+    nav .logo,.right-nav{
+        display: none;
+    }
+    nav .menu-left, .menu-center, .menu-right{
+        display: block;
+    }
+    nav{
+        padding: 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav .menu-left{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        /* padding: 6px 0 8px; */
+        width: 15%;
+    }
+    nav .menu-left i{
+        font-size: 35px;
+    }
+    nav .menu-left .bi-search{
+        font-size: 18px;
+    }
+    nav .menu-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    nav .menu-right{
+        width: 15%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav .menu-right .bi-person-circle{
+        font-size: 30px;
+    }
+    nav .menu-right i{
+        font-size: 18px;
+    }
+    /* slide */
+    .slider{
+        width: 100%;
+    }
+    .slider-list{
+        width: 100%;
+    }
+    .slide{
+        width: 100%;
+        height: 80vh;
+        background-size:cover;
+        background-position: center;
+    }
+    .slide .slide-content {
+        top: 80vh;
+        left: 0;
+        right: 0;
+        width: 94%;
+        padding: 12px 23px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px -2px;
+        height: max-content;
+    }
+    .slide .Lmore{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .slider-icon{
+        margin-top: 250px;
+    }
+    .microsoft-list{
+        margin-top: 20px;
+    }
+    .card-section{
+        width: 97%;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0px;
+    }
+    .for-business .head {
+        margin-left: 10px;
+    }
+    /* game pss */
+    .game-pass {
+        margin: 0 1%;
+        width: 79%;
+        background-size: contain;
+    }
+    .game-pass-content {
+        top: 100vh;
+        left: 0;
+        right: 0;
+        width: 98%;
+        margin: 0 auto;
+        padding: 0 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+    }
+    .follow .spans{
+        margin: 0px 20px;
+    }
+    #back-to-top{
+        margin:20px 80%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    nav .logo,.right-nav{
+        display: none;
+    }
+    nav .menu-btn, .menu-right{
+        display: block;
+    }
+    nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav .menu-left{
+
+        text-align: center;
+        padding: 6px 0 8px;
+        width: 20%;
+    }
+    nav .menu-left i{
+        font-size: 35px;
+    }
+    nav .menu-center{
+        width: 60%;
+    }
+    nav .menu-right{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav .menu-right .bi-person-circle{
+        font-size: 30px;
+    }
+    nav .menu-right i{
+        font-size: 18px;
+    }
+    .slider{
+        width: 100%;
+    }
+    .slide{
+        width: 100%;
+        height: 267px;
+        background-size: cover;
+    }
+    .slide .slide-content{
+        top: 267px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        width: 89%;
+    }
+    .slider-icon{
+        margin-top: 280px;
+    }
+    /* card */
+    .card-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 6px;
+    }
+    .card-section .card{
+        width: 98%;
+        height: max-content;
+        display: block;
+        cursor: pointer;
+        margin-bottom: 48px;
+     }
+     .card .card-content{
+        height: max-content;
+     }
+     .card-footer {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    /* game pss */
+    .game-pass-sec{
+        width: 100%;
+    }
+    .game-pass {
+        margin: 0 2%;
+        width: 96%;
+        background-size: contain;
+        padding: 0;
+    }
+    .game-pass-content {
+        top: 250px;
+        left: 0;
+        right: 0;
+        width: 98%;
+        height: 250px;
+        margin: 0 auto;
+        padding: 0 5px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+    }
+    .Lmore{
+        margin-top: 20px;
+    }
+    .game-pass-content h2{
+        font-size: 24px;
+    }
+    .game-pass-content p {
+        font-size: 16px;
+    }
+    .for-business{
+        margin-top: 0px;
+    }
+    .for-business .head{
+        margin: 0 10px;
+    }
+    .follow .spans {
+        margin: 0px 10px;
+    }
+    /* footer */
+footer .up{
+    flex-direction: column;
+}
+footer .lists{
+    width: 100%;
+}
+footer .down{
+    flex-direction: column;
+}
+footer .down .left ul li{
+    display: block;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+footer .down .right ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+footer .down .right{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+footer .down .left ul li span i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+footer .up .up-1,.up-2{
+    flex-direction: column;
+}
+#back-to-top{
+    position: static;
+    margin:20px 60%;
+}
+}
+@media only screen and (max-width: 376px){
+    .card-content{
+        padding: 16px 24px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .slide .slide-content{
+        width: 95%;
+        margin: 0;
+        padding: 8px;
+    }
+    .microsoft-list{
+        padding: 8px;
+    }
+    .slider-icon{
+        margin-top: 280px;
+    }
+    .card-section{
+        width: 100%;
+        padding: 0px;
+    }
+    .card-section .card{
+        width: 96%;
+    }
+    .card-content{
+        padding: 16px 22px;
+    }
+    .card-footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #btn-2{
+        width: 80%;
+    }
+    .follow .spans {
+        margin: 0px 5px;
+    }
+    #back-to-top{
+        margin-right:0 ;
+        margin-left: 180px;
+    }
+}
+
