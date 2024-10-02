@@ -151,7 +151,8 @@ nav .logo{
     display: flex;
     align-items: center;
 }
- nav ul li i{
+ nav ul li a i{
+    color: #000;
     font-size: 15px;
  }
 nav ul li .bi-person-circle{
@@ -163,12 +164,74 @@ nav ul li a:hover{
 
 }
 /* microsoft-menu */
+.down-arrow.active{
+    background-color: rgb(237, 237, 237);
+}
 .microsoft-menu{
     display: none;
+    width: 98%;
+}
+.microsoft-menu ul{
+    padding: 0;
+}
+.microsoft-menu ul li .ul-one{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0;
+}
+.microsoft-menu ul li .ul-one span{
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+    padding: 18px 0 18px 24px;
+}
+.microsoft-menu ul li .ul-one li{
+    padding: 12px 0 12px 24px;
+}
+.microsoft-menu ul li .ul-one li a{
+    font-size: 13px;
+}
+.ul-one ul{
+    padding: 0;
+}
+.microsoft-menu ul li{
+    list-style: none;
+}
+.microsoft-menu ul li a{
+    text-decoration: none;
+    color: #262626;
+}
+.microsoft-menu ul li a:hover{
+    text-decoration: underline;
 }
 .microsoft-menu.active{
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    background-color: rgb(237, 237, 237);
     display: block;
+    margin: 0 1%;
+    width: 98%;
+    border-bottom:2px solid black ;
 }
+.microsoft-menu.active ul{
+    margin-bottom: 0;
+}
+.view-map-menu{
+    padding: 18px 0 18px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+}
+.view-map-menu a{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
 /* slide */
 .slide{
     position: relative;
@@ -513,6 +576,78 @@ footer .down ul li a:hover{
     text-decoration: underline;
 }
 /* media query */
+@media only screen and (min-width: 1300px){
+    section{
+        padding:0 72px;
+    }
+    .slider-sec{
+        padding: 0;
+    }
+    nav{
+        padding: 0 72px;
+    }
+    .slider{
+        height: 600px;
+    }
+    .slide .slide-content{
+        left: 72px;
+    }
+    .slide .slide-content{
+        width:30% ;
+    }
+    .slide img{
+        height: 600px;
+    }
+    .game-pass {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .game-pass img {
+        width: 100%;
+    }
+    .game-pass-content {
+        width: 500px;
+        top: 40%;
+        left: 100px;
+    }
+    .for-business .head {
+        margin-left: 0%;
+    }
+    .card-section{
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .card-section .card{
+        width: 23%;
+    }
+    .card-content {
+        height: 250px;
+        padding: 10px 10px;
+    }
+    .card-footer{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+    }
+    .follow .spans {
+        margin: 0px;
+    }
+    footer .up{
+        padding: 20px 72px;
+        gap: 100px;
+    }
+    footer .down{
+        margin: 0;
+        padding: 10px 72px;
+    }
+    footer .up .up-1, .up-2 {
+        justify-content: space-between;
+    }
+}
 @media only screen and (max-width: 1024px) {
     nav .menu-left,.menu-center, .menu-right{
         display: none;
@@ -890,12 +1025,15 @@ footer .down .left ul li span i{
     /* footer */
 footer .up{
     flex-direction: column;
+    padding: 20px 10px;
 }
 footer .lists{
     width: 100%;
 }
 footer .down{
+    margin: 0;
     flex-direction: column;
+    padding: 20px 10px;
 }
 footer .down .left ul li{
     display: block;
